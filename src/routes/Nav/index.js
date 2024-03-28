@@ -1,26 +1,20 @@
 import React, { Fragment } from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
-import Logo from '../../components/Logo';
-import { headerNav, pageProps } from '../../constants';
+import { Outlet, useLocation } from 'react-router-dom';
+import { headerNav, pageProps, footerLinks } from '../../constants';
+import Footer from '../../components/Footer';
+import DesktopNav from '../../components/DesktopNav';
+import MobileNav from '../../components/MobileNav';
 
 const Nav = () => {
   const { pathname } = useLocation();
-  console.log(headerNav);
+  let bgColor = pageProps[pathname]?.color || 'bg-green';
+
   return (
     <Fragment>
-      <div className={`h-28 flex justify-between items-center text-white pl-11 ${pageProps[pathname]?.color || 'bg-pink'}`}>
-        <Link to='/'>
-          <Logo size='text-5xl' />
-        </Link>
-        <div>
-          {Object.keys(headerNav).map((key, idx) => (
-              <Link className='hover:underline text-5xl pr-11' key={`${key.toLowerCase()}-${idx}`} to={`${headerNav[key]}`}>
-                {key}
-              </Link>)
-          )}
-        </div>
-      </div>
+      <DesktopNav links={headerNav} bgColor={bgColor} pathname={pathname}/>
+      <MobileNav links={headerNav} bgColor={bgColor}  pathname={pathname}/>
       <Outlet context={{ pageProps: pageProps[pathname]}}/>
+      <Footer links={footerLinks}/>
     </Fragment>
   )
 }

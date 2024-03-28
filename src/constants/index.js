@@ -1,40 +1,51 @@
-import resume from '../images/lopez_resume.pdf';
-import { schoolIcon, volunteerIcon, workIcon } from './icons';
+import resume from '../assets/haleylopez-resume.pdf';
+import {
+  copyrightIcon,
+  hamburgerIcon,
+  schoolIcon,
+  volunteerIcon,
+  workIcon
+} from './icons';
 
 const navItems = {
   home: '/',
   projects: '/projects',
-  blog: '/blog',
   eleven11: '/eleven11',
+  contact: 'mailto:haleylopez95@gmail.com',
+  // contact: 'mailto:haleylopez95@gmail.com?subject=Blog Feedback',
   resume,
+  // services: '/services'
 }
 
 export const headerNav = {
   Projects: navItems.projects,
-  Blog: navItems.blog,
-  Eleven11: navItems.eleven11,
-  Resume: navItems.resume
+  Resume: navItems.resume,
+  Contact: navItems.contact,
 }
 
 export const pageProps = {
   '/': {
-    color: 'bg-pink',
-    title: 'Haley Lopez',
-    subtitle: 'Technologist'
-  },
-  '/blog': {
-    color: 'bg-lime-400',
-    title: 'My Mixed Plate',
-    pageDescription: 'hello world',
+    color: 'bg-forest-green',
+    title: 'HALEY LOPEZ',
+    subtitle: 'TECHNOLOGIST'
   },
   '/projects': {
-    color: 'bg-lilac',
+    color: 'bg-green',
     title: 'Projects',
-    pageDescription: 'hello world',
   },
 };
 
+export const footerLinks = {
+  navigation: navItems,
+  extras: {
+    linkedIn: 'https://www.linkedin.com/in/haleyalopez/',
+    bookshelf: 'https://literal.club/haleylopez'
+  },
+}
+
 export const icons = {
+  hamburgerIcon,
+  copyrightIcon,
   schoolIcon,
   volunteerIcon,
   workIcon,

@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-4xl
+  }
+  a {
+    @apply hover:underline
+  }
+}
 
 body {
   margin: 0;
-  font-family: 'KeepOnTruckin', sans-serif;
+  /* font-family: "Rozha One", serif; */
+  font-family: "Karla", sans-serif;
+  /* font-family: 'KeepOnTruckin', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  opacity: 1 !important; 
 }
 
 code {

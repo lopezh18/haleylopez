@@ -1,17 +1,16 @@
 import React from 'react';
-import Header from '../../components/Header';
-import { useOutletContext } from 'react-router-dom';
-const Projects = () => {
-  const { pageProps } = useOutletContext()
+import { Routes, Route } from 'react-router-dom';
+import ProjectDetails from '../ProjectDetails';
+import ProjectsList from '../ProjectsList';
 
+const Projects = () => {
+  
   return (
-    <div>
-      <Header pageProps={pageProps}/>
-      <h1>
-        Hello world from projects.
-      </h1>
-    </div>
-  )
+    <Routes>
+      <Route index element={<ProjectsList />}/>
+      <Route path=':name' element={<ProjectDetails />}/>
+    </Routes>
+  ) 
 }
 
 export default Projects;

@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Logo = ({ size }) => {
-  return (
-    <div className={`${size}`}>
-      HL
-    </div>
-  )
-}
+const Logo = ({ size, addedStyles }) => (
+  <div className={`font-serif ${size} ${addedStyles && addedStyles}`}>
+    <p>HL</p>
+  </div>
+);
 
 export default Logo;

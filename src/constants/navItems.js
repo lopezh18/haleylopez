@@ -1,4 +1,4 @@
-import resume from '../images/lopez_resume.pdf';
+import resume from '..assets/haleylopez-resume.pdf';
 const navItems = {
   Home: '/',
   Projects: '/projects',

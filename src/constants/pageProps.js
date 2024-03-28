@@ -1,8 +1,8 @@
 export const pageProps = {
   '/': {
-    color: 'bg-pink',
-    title: 'Haley Lopez',
-    subtitle: 'Technologist'
+    color: 'bg-forest-green',
+    title: 'HALEY LOPEZ',
+    subtitle: 'TECHNOLOGIST'
   },
   '/blog': {
     color: 'bg-lime-400',
