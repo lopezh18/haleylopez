@@ -10,9 +10,7 @@ import {
 const navItems = {
   home: '/',
   projects: '/projects',
-  eleven11: '/eleven11',
-  contact: 'mailto:haleylopez95@gmail.com',
-  // contact: 'mailto:haleylopez95@gmail.com?subject=Blog Feedback',
+  contact: '/contact',
   resume,
   // services: '/services'
 }

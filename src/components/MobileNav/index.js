@@ -7,8 +7,12 @@ import NavLinkContainer from '../NavLinkContainer';
 
 const MobileNav = ({ bgColor, ...restProps }) => {
     const [showMenu, setShowMenu] = useState(false);
-    const toggleMenu = () => {
-        setShowMenu(!showMenu);
+    const toggleMenu = (event) => {
+        if (event.target.id === 'logo' && !showMenu) {
+            setShowMenu(showMenu)
+        } else {
+            setShowMenu(!showMenu);
+        }
     };
 
     return (

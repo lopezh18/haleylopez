@@ -37,6 +37,7 @@ module.exports = {
         'lilac': '#BA98DE',
         'lime': '#B9B73A',
         'mint': '#C2DEC7',
+        'pink': '#FFB0D2'
       },
       height: {
         '90': '344px',

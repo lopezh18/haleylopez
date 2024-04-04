@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Logo = ({ size, addedStyles }) => (
-  <div className={`font-serif ${size} ${addedStyles && addedStyles}`}>
-    <p>HL</p>
+  <div className={`font-serif ${addedStyles && addedStyles}`}>
+    <p id='logo' className={`${size}`}>HL</p>
   </div>
 );
 

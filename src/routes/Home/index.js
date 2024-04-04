@@ -12,7 +12,7 @@ const Home = () => {
       <HomeHeader pageProps={pageProps} />
       <div id='about' className='pt-10 pb-20 md:py-20 px-3 md:px-20'>
         <h3 className='font-serif text-4xl text-center pb-4 -mt-3'>A Quick Introduction</h3>
-        <div className='text-xl text-center'>
+        <div className='text-lg text-center'>
           <p>
             I am a software engineer with a passion for leveraging technology to make a positive impact,
             I am exploring opportunities where I can leverage my technical expertise and drive for innovation. 
@@ -31,7 +31,7 @@ const Home = () => {
             In my free time, I indulge my love for travel, education, literature, and the joy of building with Legos. I am a lifelong learner,
             constantly seeking new challenges and knowledge to fuel my curiosity. 
             <br/>
-            To view my resume, click <a className='hover:underline' href={resume} target='_blank' rel='noreferrer'>here</a>.
+            To view my resume, click <a className='text-lime font-semibold' href={resume} target='_blank' rel='noreferrer'>here</a>.
           </p>
         </div>
         <Timeline />
