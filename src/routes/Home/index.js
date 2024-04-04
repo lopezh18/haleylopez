@@ -11,19 +11,20 @@ const Home = () => {
     <Fragment>
       <HomeHeader pageProps={pageProps} />
       <div id='about' className='pt-10 pb-20 md:py-20 px-3 md:px-20'>
+        <h3 className='font-serif text-4xl text-center pb-4 -mt-3'>A Quick Introduction</h3>
         <div className='text-xl text-center'>
           <p>
-            As a software engineer with a passion for leveraging technology to make a positive impact,
+            I am a software engineer with a passion for leveraging technology to make a positive impact,
             I am exploring opportunities where I can leverage my technical expertise and drive for innovation. 
-            I thrive in dynamic environments with complex challenges where I can apply my technical skills, customer focused approach
+            I thrive in dynamic environments with complex challenges where I can apply my technical skills, customer focused approach,
             and business acumen to improve and advance products.
           </p>
           <p className='pt-6'>
-            I lead a digital strategy consulting firm where I help small businesses and non-profits grow their online presence. My
+            I lead a digital strategy consulting firm where I help small businesses and non-profits grow their audience and online presence. My
             experience in front-end development allows me to create engaging user experiences that drive engagement. I specialize in
-            translating complex business requirements into user-friendly interfaces that align with branding and marketing goals.
+            translating complex business requirements into user-friendly interfaces that align with branding, marketing, and business goals.
             Additionally, my background in nonprofit fundraising has honed my skills in data analysis and strategic planning, which
-            are essential for developing effective digital strategies. Whether you're looking to enhance your online presence,
+            are essential for developing effective digital strategies. Whether you're looking to create an experience, enhance your online presence,
             optimize conversion rates, or improve user engagement, I have the expertise to help you achieve your goals.
           </p>
           <p className='pt-6'>
